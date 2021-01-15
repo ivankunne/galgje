@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galgje</title>
+</head>
+<body>
+    <div class="form">
+        <label for="letter">Vul hier een letter in : </label>
+        <input type="text" name="letter" id="letter"><br>
+        <p id="letterGuess"></p><br>
+        <p>Je hebt nog <span id="levens"></span> levens over</p>
+        <button onclick="main()" value="Gok" id="btn">Gok</button>
+        <button onclick="window.location.href=window.location.href" id="retry">Retry</button>
+        <h1 id="gameOver"></h1>
+
+        <img src="images/hang0.png" alt="HangmanGamePhoto" id="imgHang">
+    </div>
+    <script src="javascript/anime.min.js"></script>
+</body>
+</html>
